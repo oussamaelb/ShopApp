@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\web\\java script"
+		},
+		{
+			"path": "..\\..\\EX javascript"
+		},
+		{
+			"path": "..\\..\\web\\AJAX"
+		},
+		{
+			"path": "..\\..\\JEUX_HASARD"
+		},
+		{
+			"path": "..\\..\\web\\Flask"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "D:\\myflaskapp333"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Flask"
+	}
+}

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+<section>
+    <article>
+        {% for prd in prdui %}
+        <div class="carte" >
+            <img id="im" src="/static/image/{{prd.image}}" alt="">  
+            <a id="apn" href="/add/{{prd.id}}" style="background-color:white "><img id="panier" src="/static/image/{{prd.panier}}" alt=""> </a> 
+             <p id="marque">{{prd.marque}}</p>
+             <p id="prix">{{prd.prix}} dH</p>
+             <P id="categorie">{{prd.categorie}}</P>
+        </div>
+        {% endfor %}
+    </article>
+    <aside>
+        <div class="MonPanier">Mon Panier</div>
+        <div class="cr">
+            {% for i in carte %}
+            <div class="item">
+                <img class="pc" src="/static/image/{{prdui[i-1].image}}" alt="">
+                <div class="marque">{{prdui[i-1].marque}}</div>
+                <div>{{q[i-1]}}</div>
+                <div class="prix">{{prdui[i-1].prix}} dh</div>
+                <a class="atrash"href="/dele/{{prdui[i-1].id}}"><img class="trash"src="/static/image/trash.jpg" alt=""></a>
+            </div>
+            {% endfor %}
+            <h1 class="total">Totale : {{to}} DH</h1>
+
+        </div>
+    </aside>
+</section>
+{% endblock %}
